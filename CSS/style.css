@@ -1,0 +1,28 @@
+* {
+  /*border: 1px blue solid;*/
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+table {
+  border-collapse: collapse;
+  margin: 10% 0;
+}
+.response:hover{
+  background: #0D37D6;
+}
+.square {
+  border: 1px solid tan;
+  width: 75px;
+  height: 75px;
+}
+
+.green {
+  background-color: green;
+}
+.notgreen{
+  background-color: #8ABD5F;
+}
