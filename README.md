@@ -30,3 +30,6 @@ Step 5: Submit Completed Assignment
 
 Image of the mockup
 [Image of The mockup]images/mockUp.jpg
+
+Features to add in the future:
+1. Limit the number of characters that can be displayed - round and or use scientific notation.
