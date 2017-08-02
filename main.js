@@ -19,12 +19,13 @@
 
 // This array is going to contain each number used in the mathmatical operation.
 let array = [];
+// This string is going to contain each number used in the mathmatical operation.
 let string = "";
 
 // 2. collect the numbers of the buttons that are selected
 
 // number is an array.
-let number = document.querySelectorAll('.number')
+let number = window.document.querySelectorAll('.number');
 
 // function is annonymous because it is used only in this for loop. We do not need to call it outside of the loop.
 // Also,
@@ -40,7 +41,7 @@ for (var i = 0; i < number.length; i++) {
     // storing the number in the result window
     result.innerHTML += `${number[i].innerHTML}`;
   });
-};
+}
 
 // When a number button is selected add it to the array.
 
@@ -63,7 +64,7 @@ for (var i = 0; i < operator.length; i++) {
 
 
     result.innerHTML += `${operator[i].innerHTML}`; // figure outwhat's going on here
-  })
+  });
 }
 
 // ==========================================
@@ -76,36 +77,46 @@ let equal = document.querySelector('#equal');
 // when button is selected with the mouse it is pushed (added) to the string
 equal.addEventListener("click", function() {
 
-  array.push(Number(string));
+      array.push(Number(string));
 
-// declare variables
-  let parameter1 = array[0];
-  let operation = array[1];
-  let parameter2 = array[2];
-  let sum;
+      // declare variables
+      let parameter1 = array[0];
+      let operation = array[1];
+      let parameter2 = array[2];
+      let sum;
 
-if ( operation === '/' && parameter2 === 0 ) {
-  // "operation is undefined"
-  console.log("The operation is undefined. You cannot divided by zero.");
-} else {
-  sum = parameter1 operation parameter2
-}
-
-// display the answer
-let result = document.querySelector('result');
-result.innerHTML = `${answer}`;
-
-string = `${answer}`;
+      if (operation === '/' && parameter2 === 0) {
+        // "operation is undefined"
+        console.log("The operation is undefined. You cannot divided by zero.");
+      } else if (arry[1] === '+') {
+        let sum = parameter1 + parameter2;
+      } else if (arry[1] === '-') {
+        let sum = parameter1 - parameter2;
+      } else if (arry[1] === '+') {
+        let sum = parameter1 + parameter2;
+      }
 
 
+      // else {
+      //   sum = parameter1 operation parameter2
+      // }
+
+      // display the answer
+      let result = document.querySelector('result');
+      result.innerHTML = `${answer}`;
+
+      string = `${answer}`;
 
 
-let clear = document.querySelector('#clear');
-// querySelector returns just the single button 'C'
 
-clear.addEventListener("click", function() {
-  let result = document.querySelector('#result');
-  result.innerHTML = '';
-  currentNumber = '';
-  array = [];
+
+      let clear = document.querySelector('#clear');
+      // querySelector returns just the single button 'C'
+
+      clear.addEventListener("click", function() {
+        let result = document.querySelector('#result');
+        result.innerHTML = '';
+        currentNumber = '';
+        array = [];
+      });
 });
