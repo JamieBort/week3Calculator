@@ -25,8 +25,8 @@ let string = "";
 // 2. collect the numbers of the buttons that are selected
 
 // number is an array.
-let number = window.document.querySelectorAll('.number');
-
+let number = document.querySelectorAll('.number');
+console.log(number);
 // function is annonymous because it is used only in this for loop. We do not need to call it outside of the loop.
 // Also,
 for (var i = 0; i < number.length; i++) {
@@ -50,14 +50,14 @@ let operator = document.querySelectorAll('.operator');
 
 // when button is selected with the mouse it is pushed (added) to the string
 for (var i = 0; i < operator.length; i++) {
-  operator[i].addEventListener("click", function() {
+  operator[i].addEventListener("click", function(e) {
 
     array.push(Number(string));
 
     string = ""; // move this?
-
+console.log(operator[i]);
     // the button is put in the HTML tag attribute
-    array.push(operator[i].innerHTML);
+    // array.push(operator[i].innerHTML);
 
     // result is the variable that display is assigned to
     let result = document.querySelector('#display');
@@ -77,46 +77,47 @@ let equal = document.querySelector('#equal');
 // when button is selected with the mouse it is pushed (added) to the string
 equal.addEventListener("click", function() {
 
-      array.push(Number(string));
+  array.push(Number(string));
 
-      // declare variables
-      let parameter1 = array[0];
-      let operation = array[1];
-      let parameter2 = array[2];
-      let sum;
+  // declare variables
+  let parameter1 = array[0];
+  let operation = array[1];
+  let parameter2 = array[2];
+  let sum;
 
-      if (operation === '/' && parameter2 === 0) {
-        // "operation is undefined"
-        console.log("The operation is undefined. You cannot divided by zero.");
-      } else if (arry[1] === '+') {
-        let sum = parameter1 + parameter2;
-      } else if (arry[1] === '-') {
-        let sum = parameter1 - parameter2;
-      } else if (arry[1] === '+') {
-        let sum = parameter1 + parameter2;
-      }
-
-
-      // else {
-      //   sum = parameter1 operation parameter2
-      // }
-
-      // display the answer
-      let result = document.querySelector('result');
-      result.innerHTML = `${answer}`;
-
-      string = `${answer}`;
+  if (operation === '/' && parameter2 === 0) {
+    // "operation is undefined"
+    console.log("The operation is undefined. You cannot divided by zero.");
+  } else if (arry[1] === '+') {
+    let sum = parameter1 + parameter2;
+  } else if (arry[1] === '-') {
+    let sum = parameter1 - parameter2;
+  } else if (arry[1] === '+') {
+    let sum = parameter1 + parameter2;
+  }
 
 
+  // else {
+  //   sum = parameter1 operation parameter2
+  // }
+
+  // display the answer
+  let result = document.querySelector('result');
+  result.innerHTML = `${answer}`;
+
+  string = `${answer}`;
 
 
-      let clear = document.querySelector('#clear');
-      // querySelector returns just the single button 'C'
 
-      clear.addEventListener("click", function() {
-        let result = document.querySelector('#result');
-        result.innerHTML = '';
-        currentNumber = '';
-        array = [];
-      });
+
+  let clear = document.querySelector('#clear');
+  // querySelector returns just the single button 'C'
+
+  clear.addEventListener("click", function() {
+    let result = document.querySelector('#result');
+    result.innerHTML = '';
+    currentNumber = '';
+    array = [];
+  });
 });
+// eval and join
