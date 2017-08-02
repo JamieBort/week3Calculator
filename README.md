@@ -32,7 +32,7 @@ Image of the mockup
 <!-- ![Image of The mockup] images/mockUp.jpg -->
 
 <!-- NOTE: if the above does not work try -->
-![Image of The mockup] ./images/mockUp.jpg
+![Image of The mockup] (./images/mockUp.jpg?raw=true "Title")
 
 Features to add in the future:
 1. Limit the number of characters that can be displayed - round and or use scientific notation.
