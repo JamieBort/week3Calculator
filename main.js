@@ -1,6 +1,8 @@
-// ======================
-// pseudo coding begining
-// ======================
+// I need to come back to this one. It is not functioning propertly. Specificially I need to remove the ',' between the digits and mathematical operators in the display field of the calculator.
+
+
+
+// ================= pseudo coding begining =================
 //
 // 1. define variables, strings, and/or arrays
 //
@@ -10,114 +12,88 @@
 //
 // 4. display the result
 //
-// =================
-// pseudo coding end
-// =================
+// ================= pseudo coding end =================
 
-
+// ===================================================
 // 1. define variables, strings, and/or arrays
+// ===================================================
+
+// assigning the display div to the variable 'display'
+let display = document.getElementById('display');
+console.log(display);
+
+// button is an array containing 1, 2, 3, 4, 5, 6, 7, 8 , 9 , 0, +, - , /, X ' ', and '.'. In other words, every button on the calculator except the '=' sign.
+let button = document.querySelectorAll('.button');
+console.log(button);
+
+// assigning '=' to the variable 'equal'
+let equal = document.getElementById('equal');
+console.log(equal);
+
+// assigning 'C' to the variable 'clear'
+let clear = document.getElementById('clear');
+console.log(clear);
 
 // This array is going to contain each number used in the mathmatical operation.
 let array = [];
+console.log(array);
+
 // This string is going to contain each number used in the mathmatical operation.
 let string = "";
+console.log(string);
 
+
+
+// ===================================================
 // 2. collect the numbers of the buttons that are selected
+// ===================================================
 
-// number is an array.
-let number = document.querySelectorAll('.number');
-console.log(number);
+// come back and add parathaties to give it an order of operations
+
 // function is annonymous because it is used only in this for loop. We do not need to call it outside of the loop.
-// Also,
-for (var i = 0; i < number.length; i++) {
-  number[i].addEventListener("click", function() {
 
-    // the ith number is added to the string
-    string += number[i].innerHTML;
+for (var i = 0; i < button.length; i++) {
+  // we want a second array to populate when we click a button
+  button[i].addEventListener('click', function(dummyvariable) {
 
-    // let display = document.querySelector('#display');
+    // populate string with numbers and mathematical operators
+    console.log(dummyvariable.target.innerHTML);
+    array.push(dummyvariable.target.innerHTML);
 
-    let result = document.querySelector("#result");
-    // storing the number in the result window
-    result.innerHTML += `${number[i].innerHTML}`;
+
+    // need to "push" it into the dom/display
+    // document.display.push(array).innerHTML
+    display.innerHTML = array;
+    console.log(display.innerHTML);
+
+    // then remove the comas and the quotes from the string
+    mathstmt = array.join("");
+    console.log(mathstmt);
+
+    //  then use eval to evaluate the string
+    let result = eval(mathstmt);
+    console.log(result);
+    // display.innerHTML = result;
   });
 }
+console.log(array);
 
-// When a number button is selected add it to the array.
-
-// taking one of the four mathematical operations (addition, subtraction, multiplication, division) and storing in the variable 'operator'.
-let operator = document.querySelectorAll('.operator');
-
-// when button is selected with the mouse it is pushed (added) to the string
-for (var i = 0; i < operator.length; i++) {
-  operator[i].addEventListener("click", function(e) {
-
-    array.push(Number(string));
-
-    string = ""; // move this?
-console.log(operator[i]);
-    // the button is put in the HTML tag attribute
-    // array.push(operator[i].innerHTML);
-
-    // result is the variable that display is assigned to
-    let result = document.querySelector('#display');
-
-
-    result.innerHTML += `${operator[i].innerHTML}`; // figure outwhat's going on here
-  });
-}
-
-// ==========================================
-// calculating the sum/total of the operation
-// ==========================================
-
-// querySelector returns the value for equal
-let equal = document.querySelector('#equal');
-
-// when button is selected with the mouse it is pushed (added) to the string
+// produce the result with the equals symbol
 equal.addEventListener("click", function() {
-
-  array.push(Number(string));
-
-  // declare variables
-  let parameter1 = array[0];
-  let operation = array[1];
-  let parameter2 = array[2];
-  let sum;
-
-  if (operation === '/' && parameter2 === 0) {
-    // "operation is undefined"
-    console.log("The operation is undefined. You cannot divided by zero.");
-  } else if (arry[1] === '+') {
-    let sum = parameter1 + parameter2;
-  } else if (arry[1] === '-') {
-    let sum = parameter1 - parameter2;
-  } else if (arry[1] === '+') {
-    let sum = parameter1 + parameter2;
-  }
-
-
-  // else {
-  //   sum = parameter1 operation parameter2
-  // }
-
-  // display the answer
-  let result = document.querySelector('result');
-  result.innerHTML = `${answer}`;
-
-  string = `${answer}`;
-
-
-
-
-  let clear = document.querySelector('#clear');
-  // querySelector returns just the single button 'C'
-
-  clear.addEventListener("click", function() {
-    let result = document.querySelector('#result');
-    result.innerHTML = '';
-    currentNumber = '';
-    array = [];
-  });
+  let dmmyvrble = eval(concat);
+  display.innerHTML = dmmyvrble;
 });
-// eval and join
+
+
+// clear the number with the 'C' button
+
+// clear.addEventListener('click', function() {
+//       display.innerHTML = " ";
+//       display.innerHTML = " ";
+//       return result = "";
+//     });
+
+clear.addEventListener("click", function() {
+  array = [];
+  display.innerHTML = array;
+});
