@@ -20,27 +20,27 @@
 
 // assigning the display div to the variable 'display'
 let display = document.getElementById('display');
-console.log(display);
+console.log(display, 'display variable');
 
 // button is an array containing 1, 2, 3, 4, 5, 6, 7, 8 , 9 , 0, +, - , /, X ' ', and '.'. In other words, every button on the calculator except the '=' sign.
 let button = document.querySelectorAll('.button');
-console.log(button);
+console.log(button, 'button variable');
 
 // assigning '=' to the variable 'equal'
 let equal = document.getElementById('equal');
-console.log(equal);
+console.log(equal, 'equal variable');
 
 // assigning 'C' to the variable 'clear'
 let clear = document.getElementById('clear');
-console.log(clear);
+console.log(clear, 'clear variable');
 
 // This array is going to contain each number used in the mathmatical operation.
 let array = [];
-console.log(array);
+console.log(array, 'array first time');
 
-// This string is going to contain each number used in the mathmatical operation.
-let string = "";
-console.log(string);
+// This string is going to contain each number used in the mathmatical operation. UPDATE: the following to lines of code are not needed/used.
+// let string = "";
+// console.log(string, 'string');
 
 
 
@@ -57,32 +57,54 @@ for (var i = 0; i < button.length; i++) {
   button[i].addEventListener('click', function(dummyvariable) {
 
     // populate string with numbers and mathematical operators
-    console.log(dummyvariable.target.innerHTML);
+    console.log(dummyvariable.target.innerHTML, 'dummyvariable.target.innerHTML');
     array.push(dummyvariable.target.innerHTML);
 
+    // =====================================
+    // the following is allowing commas to be entered into the display
+    // =====================================
+    // // need to "push" it into the dom/display
+    // // document.display.push(array).innerHTML
+    // display.innerHTML = array;
+    // console.log(array, 'here is array, second time');
+    // console.log(display.innerHTML, 'display.innerHTML');
+    //
+    // // then remove the comas and the quotes from the string
+    // mathstmt = array.join(" ");
+    // console.log(mathstmt, 'this is the mathstmt variable');
+    // =====================================
 
+
+    // =====================================
+    // here is an alternative
+    // =====================================
     // need to "push" it into the dom/display
     // document.display.push(array).innerHTML
-    display.innerHTML = array;
-    console.log(display.innerHTML);
+    mathstmt = array.join("");
+    display.innerHTML = mathstmt;
+    // console.log(array, 'here is array, second time');
+    console.log(display.innerHTML, 'display.innerHTML');
 
     // then remove the comas and the quotes from the string
-    mathstmt = array.join("");
-    console.log(mathstmt);
+    // mathstmt = array.join(" ");
+    console.log(mathstmt, 'this is the mathstmt variable');
+    // =====================================
+
 
     //  then use eval to evaluate the string
     let result = eval(mathstmt);
-    console.log(result);
+    console.log(result, 'result variable');
     // display.innerHTML = result;
   });
 }
-console.log(array);
+console.log(array, 'here is array, third time');
 
 // produce the result with the equals symbol
 equal.addEventListener("click", function() {
   let dmmyvrble = eval(concat);
   display.innerHTML = dmmyvrble;
 });
+// console.log(dmmyvrble, 'dmmyvrble variable');
 
 
 // clear the number with the 'C' button
@@ -97,3 +119,5 @@ clear.addEventListener("click", function() {
   array = [];
   display.innerHTML = array;
 });
+
+console.log(array, 'array fourth time');

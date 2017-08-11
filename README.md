@@ -36,3 +36,6 @@ Image of the mockup
 
 Features to add in the future:
 1. Limit the number of characters that can be displayed - round and or use scientific notation.
+2. Make it so that the mathematical operators cannot be entered nor displayed until a number is first entered/displayed.
+3. Make it so that the mathematical operators cannot be entered nor displayed until a number is first entered/displayed.
+4. Make it so that the '.', nor the mathematical operators cannot be entered/displayed more than once after each number.
