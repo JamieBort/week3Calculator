@@ -59,26 +59,14 @@ for (var i = 0; i < button.length; i++) {
     // populate string with numbers and mathematical operators
     console.log(dummyvariable.target.innerHTML, 'dummyvariable.target.innerHTML');
     array.push(dummyvariable.target.innerHTML);
-
-    // =====================================
-    // the following is allowing commas to be entered into the display
-    // =====================================
-    // // need to "push" it into the dom/display
-    // // document.display.push(array).innerHTML
-    // display.innerHTML = array;
-    // console.log(array, 'here is array, second time');
-    // console.log(display.innerHTML, 'display.innerHTML');
-    //
-    // // then remove the comas and the quotes from the string
-    // mathstmt = array.join(" ");
-    // console.log(mathstmt, 'this is the mathstmt variable');
-    // =====================================
+array.push(" ");
 
 
-    // =====================================
-    // here is an alternative
+
+
     // =====================================
     // need to "push" it into the dom/display
+    // =====================================
     // document.display.push(array).innerHTML
     mathstmt = array.join("");
     display.innerHTML = mathstmt;
@@ -91,18 +79,42 @@ for (var i = 0; i < button.length; i++) {
     // =====================================
 
 
+    // =====================================
+    // need to perform the math operations
+    // =====================================
+
+// need to figure out how to put quotes around the second index. This next section does not seem to be necessary
+
+    // array = [2, '/', 2];
+    // console.log(array, 'second');
+// let w = "";
+// w = array[0] + array[1] + array[2];
+// console.log(w);
+// eval(w);
+
+
+// =====================================
+
+
+
     //  then use eval to evaluate the string
     let result = eval(mathstmt);
     console.log(result, 'result variable');
     // display.innerHTML = result;
+
   });
+
 }
 console.log(array, 'here is array, third time');
 
 // produce the result with the equals symbol
 equal.addEventListener("click", function() {
-  let dmmyvrble = eval(concat);
-  display.innerHTML = dmmyvrble;
+  display.innerHTML = eval(mathstmt);
+
+
+  // let dmmyvrble = eval(concat);
+  // display.innerHTML = dmmyvrble;
+
 });
 // console.log(dmmyvrble, 'dmmyvrble variable');
 
