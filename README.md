@@ -7,8 +7,8 @@ This exercise will help you understand how to use JavaScript functions and algor
 Step 1: Set up your project
 
 * Create an `index.html` file
-* Create a main.css file and link it to your index.html file
-* Create a main.js file and link it to your index.html file
+* Create a `main.css` file and link it to your `index.html` file
+* Create a `main.js` file and link it to your `index.html` file
 Step 2: Build the HTML
 
 * Using the mockup provided below, create your HTML
@@ -28,11 +28,20 @@ Step 5: Submit Completed Assignment
 * This project should be on your Github Account
 * Please submit the project with a URL to your Github project
 
-Image of the mockup
-<!-- ![Image of The mockup] images/mockUp.jpg -->
+## Mockup
+![Image of The mockup] (images/bca90d6b-static-calculator.jpg)
 
-<!-- NOTE: if the above does not work try -->
-![Image of The mockup] (images/mockUp.jpg?raw=true "Title")
+## Hard Mode  
+You should find the above project challenging, however here are extra features you should attempt to add in.
+
+* Chain complex calculations.
+ * Ex: `5 + 5 - 4 / 10`
+ * Take into account order of operation
+ * You'll need a way to manage state if you do this
+* Add a button to calculate the Modulo of 2 numbers
+* Add a button to calculate the Square Root of 2 numbers
+* Add a decimal button
+* Keep track of all the calculations so that you can scroll back through them
 
 Features to add in the future:
 1. Limit the number of characters that can be displayed - round and or use scientific notation.
