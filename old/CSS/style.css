@@ -1,0 +1,28 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+.wrapper {
+  border: 2px solid black;
+  margin: 10% 0;
+}
+table {
+  border-collapse: collapse;
+}
+.response:hover{
+  background: #0D37D6;
+}
+th {
+  border: 2px solid tan;
+  width: 75px;
+  height: 75px;
+  /*border-radius: 10px;*/
+}
+
+.drkgrn {
+  background-color: green;
+}
+.ltgrn{
+  background-color: #8ABD5F;
+}
