@@ -29,7 +29,7 @@ Step 5: Submit Completed Assignment
 * Please submit the project with a URL to your Github project
 
 ## Mockup
-![Image of The mockup] (/images/bca90d6b-static-calculator.jpg)
+![Image of The mockup](/images/bca90d6b-static-calculator.jpg)
 
 ## Hard Mode  
 You should find the above project challenging, however here are extra features you should attempt to add in.
