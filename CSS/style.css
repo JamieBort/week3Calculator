@@ -1,3 +1,8 @@
+/*TODO
+Items to revisit
+1. make the calculator look like the one in the mockup.*/
+
+
 #container {
   /*The following justification is for the children element(s)*/
   display: flex;
@@ -17,7 +22,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #64b254;
+  /*background-color: #64b254;*/
   width: 325px;
   margin: auto;
   height: 405px;
@@ -37,8 +42,17 @@ table {
 
 td {
   border: 1px solid blue;
+  height: 5em;
+  width: 5em;
+  text-align: center;
 }
 
 .digits{
   color: white;
+  background-color: #64b254;
+}
+
+.operations{
+  /*color: white;*/
+  background-color: #84c179;
 }
