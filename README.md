@@ -1,6 +1,6 @@
 from:  https://newline.theironyard.com/cohorts/15/courses/9/projects/59
 
-**Build a Calculator**  
+# Build a Calculator
 
 This exercise will help you understand how to use JavaScript functions and algorithms. You will also work with the DOM and respond to user input.
 

@@ -3,10 +3,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 500px;
+  height: 650px;
   width: 30%;
   margin: auto;
-  border: 2px solid orange;
+  border: .5px solid orange;
 }
 
 #inner {
@@ -18,9 +18,9 @@
   justify-content: center;
   align-items: center;
   background-color: #64b254;
-  width: 90%;
+  width: 325px;
   margin: auto;
-  height: 400px;
+  height: 405px;
   border: 2px solid blue;
 }
 
@@ -33,4 +33,12 @@ table {
   /*display: flex;
   justify-content: center;
   align-items: center;*/
+}
+
+td {
+  border: 1px solid blue;
+}
+
+.digits{
+  color: white;
 }
