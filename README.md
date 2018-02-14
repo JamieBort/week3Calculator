@@ -56,3 +56,16 @@ Features to add in the future:
 2. Make it so that the mathematical operators cannot be entered nor displayed until a number is first entered/displayed.
 3. Make it so that the mathematical operators cannot be entered nor displayed until a number is first entered/displayed.
 4. Make it so that the '.', nor the mathematical operators cannot be entered/displayed more than once after each number.
+
+##To-Do
+
+-[ ] 1. Write JavaScript for this.
+-[ ] 2. Clean up CSS so that the finished product looks like the mockup.
+-[ ] 3. Remove 'old' folder.
+-[ ] 4. Push to master branch.
+-[ ] 5. Push to gh-pages.
+
+Some references that might be helpful:
+https://newline.theironyard.com/cohorts/15/courses/9/objective_lessons/121
+https://newline.theironyard.com/cohorts/15/courses/9/objective_lessons/123
+and maybe this too: https://newline.theironyard.com/cohorts/15/courses/9/objective_lessons/132
