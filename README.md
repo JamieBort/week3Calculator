@@ -60,9 +60,13 @@ Features to add in the future:
 ##To-Do
 
 -[ ] 1. Write JavaScript for this.
+
 -[ ] 2. Clean up CSS so that the finished product looks like the mockup.
+
 -[ ] 3. Remove 'old' folder.
+
 -[ ] 4. Push to master branch.
+
 -[ ] 5. Push to gh-pages.
 
 Some references that might be helpful:
