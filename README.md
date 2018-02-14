@@ -57,7 +57,7 @@ Features to add in the future:
 3. Make it so that the mathematical operators cannot be entered nor displayed until a number is first entered/displayed.
 4. Make it so that the '.', nor the mathematical operators cannot be entered/displayed more than once after each number.
 
-## To-Do
+### To-Do
 
 -[ ] 1. Write JavaScript for this.
 
