@@ -66,6 +66,9 @@ Features to add in the future:
 -[ ] 5. Push to gh-pages.
 
 Some references that might be helpful:
+
 https://newline.theironyard.com/cohorts/15/courses/9/objective_lessons/121
+
 https://newline.theironyard.com/cohorts/15/courses/9/objective_lessons/123
+
 and maybe this too: https://newline.theironyard.com/cohorts/15/courses/9/objective_lessons/132
