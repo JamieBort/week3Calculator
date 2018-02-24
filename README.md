@@ -60,7 +60,9 @@ Features to add in the future:
 ### To-Do
 
 -[ ] 1. Write JavaScript for this.
+
   -[ ] a. The decimal point is not working. Fix that.
+
   -[ ] b. Include parentheses and a negative button.
 
 -[ ] 2. Clean up CSS so that the finished product looks like the mockup.
