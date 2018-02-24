@@ -65,9 +65,11 @@ Features to add in the future:
 
 -[ ] 3. Remove 'old' folder.
 
--[ ] 4. Push to master branch.
+-[ ] 4. Remove this To-Do list?
 
--[ ] 5. Push to gh-pages.
+-[ ] 5. Push to master branch.
+
+-[ ] 6. Push to gh-pages.
 
 Some references that might be helpful:
 
